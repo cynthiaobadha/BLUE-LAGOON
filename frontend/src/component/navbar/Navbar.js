@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
-import Logo from '../images/logo.png'
+import { Link } from 'react-router-dom'
+import Logo from '../../images/logo.png'
 import './Navbar.css'
 
 const Navbar =() =>{
@@ -14,10 +15,14 @@ const handleClick = () => setClick(!click)
                 <img src={Logo} alt='logo'/>
             </div>
         <ul className={click ? ('nav-menu active'): ('nav-menu')}>
+            
             <li className='nav-item'><a href='/'>Home</a></li>
             <li className='nav-item'><a href='/'>About</a></li>
             <li className='nav-item'><a href='/'>Doctors</a></li>
-            <li className='nav-item'><a href='/'>Book Appointment</a></li>
+            <li>
+            <Link to="/user"><li className='nav-item'><a href='/'>Book Appointment</a></li>
+            </Link>
+            </li>
             <li className='nav-item'><a href='/'>Contact Us</a></li>
         </ul>
         <div className='hamburger' onClick={handleClick}>
