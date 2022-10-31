@@ -32,7 +32,7 @@ class CreateUser extends Component {
       age: event.target.value,
     });
   };
- handleAge = (event) => {
+ handleSpeciality = (event) => {
     this.setState({
       speciality: event.target.value,
       });
