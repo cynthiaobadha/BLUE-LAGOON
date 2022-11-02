@@ -1,9 +1,9 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './component/navbar/Navbar'
-import CreateUser from './component/patients/user';
-import LoginForm from './component/doctors/loginForm';
-import Hero from './component/hero/Hero'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from './component/Navbar'
+import CreateUser from './component/Pages/user';
+import Doctors from './component/Pages/loginForm'
+import Hero from './component/Hero'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
     </div>
     <Routes>
     <Route path="/CreateUser" element={<CreateUser/>}/>
-    <Route path="/LoginForm" element={<LoginForm/>}/>
+    <Route path="/Doctors" element={<Doctors/>}/>
     </Routes>
     <Hero/>
     </BrowserRouter>

@@ -15,11 +15,13 @@ class CreateUser extends Component {
   handleName = (event) => {
     this.setState({
       name: event.target.value,
+
     });
   };
   handleEmail = (event) => {
     this.setState({
       email: event.target.value,
+      
     });
   };
   handlePassword = (event) => {
@@ -27,6 +29,7 @@ class CreateUser extends Component {
       password: event.target.value,
     });
   };
+  
   handleAge = (event) => {
     this.setState({
       age: event.target.value,
