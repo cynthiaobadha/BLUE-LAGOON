@@ -29,6 +29,7 @@ class CreateUser extends Component {
       password: event.target.value,
     });
   };
+  
   handleAge = (event) => {
     this.setState({
       age: event.target.value,
