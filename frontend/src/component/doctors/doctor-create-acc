@@ -23,6 +23,7 @@ class CreateUser extends Component {
       email: event.target.value,
       
     });
+    
   };
   handlePassword = (event) => {
     this.setState({
