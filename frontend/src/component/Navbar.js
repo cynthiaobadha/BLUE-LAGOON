@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
-import { Link } from 'react-router-dom'
-import Logo from '../../images/logo.png'
-import './Navbar.css'
+import { NavLink } from 'react-router-dom'
+import Logo from '../images/logo.png'
+import '../component/cssfiles/Navbar.css'
 
 const Navbar =() =>{
 const[click,setClick]=useState(false)
@@ -16,14 +16,11 @@ const handleClick = () => setClick(!click)
             </div>
         <ul className={click ? ('nav-menu active'): ('nav-menu')}>
             
-            <li className='nav-item'><a href='/'>Home</a></li>
-            <li className='nav-item'><a href='/'>About</a></li>
-            <li className='nav-item'><a href='/'>Doctors</a></li>
-            <li>
-            <Link to="/user"><li className='nav-item'><a href='/'>Book Appointment</a></li>
-            </Link>
-            </li>
-            <li className='nav-item'><a href='/'>Contact Us</a></li>
+         <li> <NavLink to='/' activeClassName = 'is-active' id='nav-item' exact={true}>Home</NavLink></li>
+         <li> <NavLink to='/About Us' activeClassName = 'is-active' id='nav-item'>About Us</NavLink></li>
+         <li> <NavLink to='/LoginForm' activeClassName = 'is-active' id='nav-item'>Doctors</NavLink></li>
+         <li> <NavLink to='/CreateUser' activeClassName = 'is-active' id='nav-item'>Book Appointment</NavLink></li>
+         <li> <NavLink to='/Contact Us' activeClassName = 'is-active' id='nav-item'>Contact Us</NavLink></li>
         </ul>
         <div className='hamburger' onClick={handleClick}>
             {click ? (<FaTimes size={30} style={{color:'#f8f8f8'}}/>):(< FaBars size={30} style={{color:'#f8f8f8'}}/>)}

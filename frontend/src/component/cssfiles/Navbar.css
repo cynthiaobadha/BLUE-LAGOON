@@ -16,7 +16,7 @@
     .nav-menu{
     display: flex;
     }
-    .nav-item{
+    #nav-item{
     padding: 1rem;
     }
     .hamburger{

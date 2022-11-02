@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function LoginForm({ Login, error }) {
+function Doctors({ Login, error }) {
     const [details, setDetails] = useState({name: "cynthia", email: "obadhacynthia@gmail.com", password:"cynthia667"});
   
     const submitHandler = e => {
@@ -35,4 +35,4 @@ function LoginForm({ Login, error }) {
     )
 }
 
-export default LoginForm
+export default Doctors
