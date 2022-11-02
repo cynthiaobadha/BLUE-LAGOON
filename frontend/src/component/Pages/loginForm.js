@@ -4,12 +4,20 @@ import { Container, Row, Col, Card, Form, CardHeader, CardBody, FormGroup, CardF
 import axios from 'axios';
 import { AuthContext } from '../Auth/AuthContext';
 
+<<<<<<< HEAD:frontend/src/component/doctors/loginForm.js
 const LoginForm = () => {
 	const [username, setUsername] = useState('');
 	const [password, setPassword] = useState('');
 	const [status, setStatus] = useState(0);
 	const { token, setToken, googleId, setGoogleId } = useContext(AuthContext);
 	const history = useHistory();
+=======
+function Doctors({ Login, error }) {
+    const [details, setDetails] = useState({name: "cynthia", email: "obadhacynthia@gmail.com", password:"cynthia667"});
+  
+    const submitHandler = e => {
+        e.preventDefault();
+>>>>>>> king-contribution:frontend/src/component/Pages/loginForm.js
 
 	async function login() {
 		try {
@@ -97,4 +105,8 @@ const LoginForm = () => {
 	);
 }
 
+<<<<<<< HEAD:frontend/src/component/doctors/loginForm.js
 export default LoginForm;
+=======
+export default Doctors
+>>>>>>> king-contribution:frontend/src/component/Pages/loginForm.js

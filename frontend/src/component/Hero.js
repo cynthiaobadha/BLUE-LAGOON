@@ -1,8 +1,8 @@
 import React from'react'
 import {Link} from 'react-router-dom'
 // import CreateUser from '../patients/user'
-import Image from '../../images/doctors.png'
-import './Hero.css'
+import Image from '../images/doctors.png'
+import '../component/cssfiles/Hero.css'
 
 const Hero = () => {
     return(
@@ -22,7 +22,7 @@ const Hero = () => {
                     </Link>
                 </div>
                 <div className="button-container">
-                  <Link to="/LoginForm">
+                  <Link to="/Doctors">
                   <button className="custom-button">Veiw Doctors</button>
                   </Link>
                 </div>
